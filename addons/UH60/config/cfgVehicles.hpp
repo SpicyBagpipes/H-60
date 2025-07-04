@@ -44,7 +44,7 @@ class CfgVehicles {
       mapSize     = 10;
 
       A3TI_ThermalSelections[] = {16, 17, 18};
-      
+
       #include "cfgAnimationSources.hpp"
       #include "cfgUVAnimations.hpp"
       #include "CfgUserActions.hpp"
@@ -186,6 +186,7 @@ class CfgVehicles {
       preciseGetInOut          = 0;
       radarTarget              = 1.2;
       radarTargetSize          = 0.7;
+      radarType                = 4;
       selectionFireAnim        = "";
       selectionHRotorStill	   = "rotorBlades";
       selectionHRotorMove		   = "rotorBlurred";
@@ -203,10 +204,6 @@ class CfgVehicles {
       visualTarget             = 1;
       visualTargetSize         = 1.0;
       weapons[]                = {"CMFlareLauncher"};
-
-
-
-
         
         class VTX_H60_HDTS_Copilot;
         #include "cfghct.hpp"
@@ -372,7 +369,7 @@ class CfgVehicles {
         };
 
         class TransportWeapons{};
-        radarType = 4;
+        
 
         class Damage
         {
@@ -510,34 +507,16 @@ class CfgVehicles {
         }; // Wheels
     }; // vtx_H60_base
 
-    class vtx_UH60M : vtx_H60_base {
+    class vtx_UH60M : vtx_H60base {
         scope = 2;
         editorPreview = "z\vtx\addons\UH60\Data\Preview\vtx_UH60M.jpg";
         hiddenSelectionsTextures[] = {
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "","","","","","","","","","","","","","","","",
             "z\vtx\addons\UH60\Data\Exterior\Hull Main_co.paa",
             "z\vtx\addons\UH60\Data\Exterior\Misc_co.paa",
             "z\vtx\addons\UH60\Data\Exterior\Hull Tail_co.paa",
             "z\vtx\addons\UH60\Data\Exterior\Markings\Markings_ca.paa",
-            "", // "left_num_1",
-            "", // "left_num_2",
-            "", // "right_num_1",
-            "", // "right_num_2",
+            "","","","", // Door Numbers "L1, L2, R1, R2",
             "z\vtx\addons\UH60\Data\FuelProbe\Fuel_probe_co.paa"
         };
          class AnimationSources: AnimationSources
